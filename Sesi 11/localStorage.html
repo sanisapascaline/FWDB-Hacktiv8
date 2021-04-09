@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script>
+    // Cek support
+    if (typeof(Storage) !== "undefined") {
+      var namaLengkap = prompt("Siapa nama anda?");
+
+      // menyimpan
+      localStorage.setItem("name", namaLengkap);
+
+      // mengambil data
+      var name = localStorage.getItem("name");
+      console.log(name);
+
+      // menghapus data
+      // localStorage.removeItem("name")
+    }
+    else {
+      console.log("Maaf, browser anda tidak support local storage");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

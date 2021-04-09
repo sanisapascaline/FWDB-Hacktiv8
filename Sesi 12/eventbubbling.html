@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li id="list">
+      <a href="https:/www.google.com">Google</a>
+    </li>
+  </ul>
+  <div id="contoh">
+    <p>Halo</p>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $("#list").on("click", "a", function () {
+    event.preventDefault();
+    console.log($(this).text());
+  });
+
+  $("#contoh").on("click", "p", function () {
+    console.log($(this).text());
+  });
+</script>
+</html>

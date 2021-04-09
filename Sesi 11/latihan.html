@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script>
+    // inisiasi dengan prompt
+    var angkaPertama = prompt("Masukkan angka pertama: ");
+    var operator = prompt("Masukkan salah satu operator(*,/,+,-");
+    var angkaKedua = prompt("Masukkan angka kedua: ");
+
+    // fungsi kalkulator
+    function tambahAngka(angka1, angka2) {
+      return angka1 + angka2;
+    }
+    function kurangAngka(angka1, angka2) {
+      return angka1 - angka2;
+    }
+    function kaliAngka(angka1, angka2) {
+      return angka1 * angka2;
+    }
+    function bagiAngka(angka1, angka2) {
+      return angka1 / angka2;
+    }
+
+    // mengecek operator
+    if (operator=="+") {
+      alert(tambahAngka(angkaPertama, angkaKedua));
+    } else if (operator=="-") {
+      alert(kurangAngka(angkaPertama, angkaKedua));
+    } else if (operator=="*") {
+      alert(kaliAngka(angkaPertama, angkaKedua));
+    } else if (operator=="/") {
+      alert(bagiAngka(angkaPertama, angkaKedua));
+    } else {
+      alert("Operator salah");
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

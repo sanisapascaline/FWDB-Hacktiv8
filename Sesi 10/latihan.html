@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/dogsData.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script>
+    $(document).ready(function () {
+      them_dogs.forEach(function(dog){
+        $("#output").append("<img src='" + dog.picture + "'/>");
+        $("#output").append("<div class='text-center'>"+ dog.name + "</div>");
+        $("#output").append("<div class='text-center'>"+ dog.age + "</div>");
+        $("#output").append("<div class='text-center'>"+ dog.breed + "</div>");
+        $("#output").append("<div class='text-center'>"+ dog.food + "</div>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="output" class="card">
+  </div>
+</body>
+</html>

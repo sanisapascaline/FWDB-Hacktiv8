@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <script>
+    // Membuat function tanpa return
+    function tampilkan(){
+      console.log("Hello World"); // action
+    }
+    tampilkan();
+    // Membuat function dengan return
+    function tampilkan2(){
+      return 2;  // value
+    }
+    var angkaDua = tampilkan2();
+    console.log(angkaDua);
+    // Membuat function dengan 1 parameter tanpa return
+    function tampilkanAngka(angka) {
+      console.log(angka);
+    }
+    tampilkanAngka(3);
+    // Membuat function dengan 1 parameter dengan return
+    function kalikanDua(angka) {
+      var total = angka * 2;
+      return total;
+    }
+    console.log(kalikanDua(10));
+    // Membuat function dengan 2 parameter dengan return
+    function kalikanAngka(angka1, angka2) {
+      return angka1 * angka2;
+    }
+    console.log(kalikanAngka(3,3));
+
+    // Membuat function dengan parameter default
+    function tampilkanNilai(angka = 1){
+      return angka;
+    }
+    console.log(tampilkanNilai(5)); // 5
+    console.log(tampilkanNilai()); // 1
+
+    // Membuat anonymous function
+    var fungsiPerkalian = function(angka1,angka2) {
+      console.log(angka1*angka2);
+    }
+    fungsiPerkalian(2,3);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button>Click Me!</button>
+  <input type="text"/>
+  <p>Paragraph</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  //one element with many events
+  $("button").on({
+    click: function () {
+      console.log("Button click")
+    },
+    dblclick: function () {
+      console.log("Button double click")
+    }
+  });
+  $("input").on({
+    focus: function () {
+      console.log("Input focus")
+    },
+    blur: function () {
+      console.log("Input blur")
+    }
+  })
+  //one element with many events with same action
+  $("p").on("mouseover click", function () {
+    console.log("paragraph is clicked/hovered");
+  });
+</script>
+</html>

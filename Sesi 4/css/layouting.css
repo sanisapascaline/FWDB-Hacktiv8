@@ -1,0 +1,41 @@
+.header-logo {
+  background-color: slategray;
+  width: 40%;
+  height: 50px;
+  float: left;
+}
+
+.header-banner {
+  background-color: khaki;
+  width: 60%;
+  height: 50px;
+  float: left;
+}
+
+.header-bar {
+  background-color: rosybrown;
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+.navigation {
+  background-color: aliceblue;
+  width: 40%;
+  height: 250px;
+  float: left;
+}
+
+.content {
+  background-color: aquamarine;
+  width: 60%;
+  height: 250px;
+  float: left;
+}
+
+.footer-bar {
+  background-color: sandybrown;
+  width: 100%;
+  height: 50px;
+  float: left;
+}

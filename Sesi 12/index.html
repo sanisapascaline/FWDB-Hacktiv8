@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button>Click Me</button>
+  <input type="text"/>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $("button").on("click", function () { 
+    console.log("<button> was clicked");
+  });
+  $("button").on("dblclick", function () { 
+    console.log("<button> was double clicked");
+  });
+  $("button").on("mouseover", function () { 
+    console.log("<button> is hovered");
+  });
+  $("button").on("mouseleave", function () { 
+    console.log("<button> is unhovered");
+  });
+  $("input").on("keypress", function () { 
+    console.log("<input> with keypress");
+  });
+  $("input").on("keydown", function () { 
+    console.log("<input> with keydown");
+  });
+  $("input").on("keyup", function () { 
+    console.log("<input> with keyup");
+  });
+  $("input").on("focus", function () { 
+    console.log("<input> is focused");
+  });
+  $("input").on("blur", function () { 
+    console.log("<input> is blur");
+  });
+</script>
+</html>

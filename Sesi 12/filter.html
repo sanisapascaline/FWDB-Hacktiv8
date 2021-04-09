@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <p>Masukkan Nilai KKM: <input type="number" id="nilaiKKM"/></p>
+    <button onclick="tombolCekNilai()">Cek Nilai</button>
+    <p>Nilai yang di atas KKM: <b id="hasil"></b></p>
+  </div>
+</body>
+<script>
+  var nilai = [85, 81, 70, 64, 100, 30];
+  function cekNilai(nilai) {
+    return nilai >= document.getElementById("nilaiKKM").value;
+  }
+  function tombolCekNilai() {
+    document.getElementById("hasil").innerHTML = nilai.filter(cekNilai);
+  }
+</script>
+</html>

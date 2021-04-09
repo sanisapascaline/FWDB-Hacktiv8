@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    @keyframes animasi {
+      0% { /*detik 0 */
+        background-color: red;
+        width: 100px;
+      }
+      20% { /*detik 1 */
+        background-color: yellow;
+        width: 20px;
+      }
+      60% {  /*detik 3 */
+        background-color: green;
+        width: 200px;
+      }
+      100% {  /*detik 5 */
+        background-color: blue;
+        width: 100%;
+      }
+    }
+    .animasi {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      animation: animasi 5s ease-in 1s infinite normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="animasi"></div>
+</body>
+</html>

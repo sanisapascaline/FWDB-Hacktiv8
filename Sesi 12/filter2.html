@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script>
+    //CEK NILAI POSITIF
+    function isPositive(nilai) {
+      return nilai >= 0;
+    }
+    var nilai1 = [12,-10,-99,8,0];
+    document.write(nilai1.filter(isPositive));
+    document.write("<br/>");
+
+    //CEK NILAI GANJIL
+    function isOdd(nilai2) {
+      return nilai2%2 == 1;
+    }
+    var nilai2 = [12,13,11,8,0];
+    document.write(nilai2.filter(isOdd));
+    document.write("<br/>");
+
+    //CEK NILAI GENAP
+    function isEven(nilai2) {
+      return nilai2%2 == 0;
+    }
+    document.write(nilai2.filter(isEven));
+  </script>
+</head>
+<body>
+</body>
+</html>

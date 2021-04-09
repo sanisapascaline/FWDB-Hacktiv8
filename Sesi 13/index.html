@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+    /* MEDIA SCREEN VIEWPORT*/
+    @media (min-width: 500px) and (max-width: 600px){
+      p {
+        color: red;
+        font-size: 24px;
+      }
+    }
+    /* MEDIA DEVICE*/
+    @media (min-device-width:800px) and (max-device-width: 1500px) {
+      p {
+        color: yellow;
+        font-size: 24px;
+      }
+    }
+    /* MEDIA ORIENTATION */
+    @media (orientation: landscape) {
+      p {
+        color: green;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>Hello World!</p>
+</body>
+</html>

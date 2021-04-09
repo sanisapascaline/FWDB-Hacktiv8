@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    @keyframes animasi {
+      from {
+        background-color: red;
+        width: 100px;
+      }
+      to {
+        background-color: yellow;
+        width: 100%;
+      }
+    }
+    div {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      animation: animasi 4s ease-in 1s infinite reverse;
+      -moz-animation: animasi 4s ease-in 1s infinite reverse;
+      -o-animation: animasi 4s ease-in 1s infinite reverse;
+      -webkit-animation: animasi 4s ease-in 1s infinite reverse;
+      /* animation-name: animasi;
+      animation-timing-function: ease-in;
+      animation-delay: 5s;
+      animation-direction: reverse;
+      animation-iteration-count: infinite; */
+    }
+    .animasi-cepat {
+      animation-duration: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div class="animasi-cepat"></div>
+</body>
+</html>
